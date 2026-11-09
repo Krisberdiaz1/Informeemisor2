@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe UNEFA - Principios de Transmisión de Datos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ====== HOJA 1: PORTADA ====== -->
+  <section class="hoja portada">
+    <header class="encabezado-portada">
+      <img src="Logo-Unefa.png" alt="Logo UNEFA Izquierdo" class="logo-uneFA">
+      <div class="texto-institucional">
+        <p>República Bolivariana de Venezuela</p>
+        <p>Ministerio del Poder Popular Para la Defensa</p>
+        <p>Universidad Nacional Experimental Politécnica de la Fuerza Armada Nacional</p>
+        <p>UNEFA - Núcleo Guárico</p>
+        <p>Ingeniería de Sistemas - VIII Semestre</p>
+      </div>
+      <img src="Logo-Unefa.png" alt="Logo UNEFA Derecho" class="logo-uneFA">
+    </header>
+
+    <div class="titulo-portada">
+      <h1>Los principios de transmisión de datos:<br>Emisor/receptor</h1>
+    </div>
+
+    <footer class="pie-portada">
+      <div class="firma-izquierda">
+        <p><strong>Profesor:</strong></p>
+        <p>Raul Blanco</p>
+      </div>
+      <div class="firma-derecha">
+        <p><strong>Bachiller:</strong></p>
+        <p>Krisber Diaz</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- ====== HOJAS DE CONTENIDO (FLUJO CONTINUO) ====== -->
+  <div class="contenedor-contenido">
+
+    <!-- Hoja 1 de contenido -->
+    <section class="hoja contenido" data-pagina="1">
+      <div class="texto-flujo">
+        <p>Los principios de transmisión de datos constituyen el fundamento de toda comunicación entre sistemas informáticos, y su comprensión resulta indispensable para cualquier profesional del área de la ingeniería de sistemas. En esencia, la transmisión de datos se define como el proceso mediante el cual se transporta información desde un punto de origen hasta un punto de destino a través de un medio de comunicación, ya sea este guiado (cables de cobre, par trenzado, cable coaxial o fibra óptica) o no guiado (ondas de radio, microondas, infrarrojo o satélites). Para que este proceso sea posible, se requiere la interacción coordinada de varios elementos fundamentales, entre los cuales destacan el emisor, el receptor, el mensaje, el canal de transmisión y los protocolos que rigen la comunicación.</p>
+
+        <p>El emisor es el dispositivo o entidad que genera y codifica el mensaje original para convertirlo en una señal apta para ser transmitida por el canal. Este proceso de codificación puede incluir la modulación, la compresión, el cifrado o el empaquetamiento de los datos en tramas o paquetes, dependiendo del modelo de comunicación empleado y de las características del medio. El emisor debe garantizar que la señal generada sea comprensible para el receptor, que cumpla con las especificaciones técnicas del medio de transmisión utilizado y que respete los estándares establecidos por los organismos de normalización, tales como la IEEE, la ISO o la ITU.</p>
+
+        <p>Por su parte, el receptor es el encargado de captar la señal proveniente del canal y realizar el proceso inverso: la decodificación. Esta etapa convierte la señal recibida nuevamente en datos inteligibles para el usuario o para el sistema de destino. El receptor debe ser capaz de filtrar el ruido, corregir posibles errores introducidos durante la transmisión y reconstruir el mensaje original con la mayor fidelidad posible. Un receptor bien diseñado no solo decodifica la señal, sino que también verifica su integridad mediante mecanismos de detección de errores, como los códigos de redundancia cíclica (CRC) o las sumas de verificación (checksums).</p>
+      </div>
+      <div class="numero-pagina">1</div>
+    </section>
+
+    <!-- Hoja 2 de contenido -->
+    <section class="hoja contenido" data-pagina="2">
+      <div class="texto-flujo">
+        <p>La relación entre emisor y receptor no es unidireccional en la mayoría de los sistemas modernos. En los modelos de comunicación dúplex, ambos roles se intercambian dinámicamente: un dispositivo puede actuar como emisor en un instante y como receptor en el siguiente. Esta bidireccionalidad es esencial en protocolos como TCP/IP, donde el establecimiento de la conexión requiere un intercambio continuo de mensajes de control (handshake) antes de que los datos útiles puedan ser transferidos. De igual forma, en los sistemas de mensajería instantánea o en las llamadas de voz sobre IP, ambos extremos actúan simultáneamente como emisores y receptores.</p>
+
+        <p>El canal de transmisión constituye el medio físico o lógico por el cual viajan las señales desde el emisor hasta el receptor. La calidad de la transmisión depende en gran medida de las características del canal, tales como el ancho de banda disponible, la atenuación de la señal, la interferencia electromagnética, la distorsión por retardo y la relación señal-ruido (SNR). Un canal con un ancho de banda reducido limitará la velocidad de transmisión, mientras que un canal con alta atenuación obligará al uso de repetidores o amplificadores para mantener la integridad de la señal a lo largo del trayecto.</p>
+
+        <p>Además de los elementos físicos, la transmisión de datos se rige por una serie de protocolos y estándares que definen las reglas de comunicación entre emisor y receptor. Estos protocolos establecen el formato de los mensajes, el orden de los intercambios, los mecanismos de control de flujo, la detección y corrección de errores, y los procedimientos de establecimiento y cierre de la conexión. El modelo de referencia OSI, con sus siete capas, y el modelo TCP/IP, con sus cuatro capas, son los marcos conceptuales más utilizados para describir y organizar estos protocolos en la práctica profesional.</p>
+      </div>
+      <div class="numero-pagina">2</div>
+    </section>
+
+    <!-- Hoja 3 de contenido -->
+    <section class="hoja contenido" data-pagina="3">
+      <div class="texto-flujo">
+        <p>La sincronización entre emisor y receptor es otro de los principios esenciales de la transmisión de datos. Para que el receptor pueda interpretar correctamente la señal recibida, debe conocer con precisión los instantes en los que comienza y termina cada bit o símbolo transmitido. Existen dos técnicas principales de sincronización: la sincronización síncrona, en la que emisor y receptor comparten una señal de reloj común o se transmiten secuencias de sincronización periódicas, y la sincronización asíncrona, en la que cada carácter o bloque de datos se enmarca con bits de inicio y de parada. La elección de una u otra técnica depende de las necesidades del sistema y de las características del canal.</p>
+
+        <p>Los modos de transmisión también forman parte de los principios fundamentales. Se distinguen tres modalidades principales: la transmisión simplex, en la que la comunicación es unidireccional y un dispositivo actúa siempre como emisor mientras el otro actúa siempre como receptor (por ejemplo, la radiodifusión o la televisión abierta); la transmisión half-duplex, en la que ambos dispositivos pueden emitir y recibir, pero no de manera simultánea, sino alternando turnos (como en las comunicaciones por radio de banda ciudadana); y la transmisión full-duplex, en la que la comunicación es simultánea en ambos sentidos, lo que requiere canales separados o técnicas de multiplexación por división de frecuencia o de tiempo (como en las comunicaciones telefónicas modernas).</p>
+
+        <p>La detección y corrección de errores es un aspecto crítico en cualquier sistema de transmisión. Durante el trayecto, las señales pueden verse afectadas por ruido térmico, interferencias, atenuación o distorsión, lo que provoca que algunos bits lleguen alterados al receptor. Para mitigar este problema se emplean técnicas como la paridad simple o bidimensional, los códigos de Hamming, los códigos cíclicos (CRC) y los algoritmos de corrección hacia adelante (FEC). Estas técnicas permiten al receptor detectar cuándo un mensaje ha sido corrompido y, en algunos casos, reconstruir la información original sin necesidad de retransmisión.</p>
+      </div>
+      <div class="numero-pagina">3</div>
+    </section>
+
+    <!-- Hoja 4 de contenido -->
+    <section class="hoja contenido" data-pagina="4">
+      <div class="texto-flujo">
+        <p>En el contexto actual, los principios de transmisión de datos adquieren una relevancia aún mayor debido al crecimiento exponencial de las redes de comunicación, el Internet de las Cosas (IoT), la computación en la nube y los servicios de streaming. Cada uno de estos escenarios exige que emisores y receptores coordinen sus esfuerzos de manera eficiente para garantizar la entrega oportuna y confiable de la información. Los ingenieros de sistemas deben comprender no solo los aspectos físicos de la transmisión, sino también los aspectos lógicos y protocolarios que permiten que dispositivos heterogéneos se comuniquen entre sí.</p>
+
+        <p>En conclusión, los principios de transmisión de datos se sustentan en la correcta interacción entre un emisor que codifica y un receptor que decodifica, mediados por un canal de comunicación y regulados por protocolos que garantizan la integridad, el orden y la confiabilidad de la información. Comprender estos roles es fundamental para el diseño, la implementación y el mantenimiento de redes de datos eficientes y seguras, así como para el desarrollo de aplicaciones distribuidas que dependen de la comunicación entre procesos remotos. El dominio de estos conceptos constituye una base sólida para el estudio de áreas más avanzadas, como la seguridad informática, las redes inalámbricas y la arquitectura de sistemas distribuidos.</p>
+
+        <p>Finalmente, se recomienda a los estudiantes de Ingeniería de Sistemas profundizar en el estudio de los estándares internacionales de comunicación, realizar prácticas de laboratorio con herramientas de simulación de redes como Cisco Packet Tracer o Wireshark, y mantenerse actualizados respecto a las nuevas tecnologías de transmisión, tales como las redes 5G, la fibra óptica de próxima generación y las comunicaciones satelitales de baja órbita. Solo mediante la combinación de teoría y práctica será posible formar profesionales capaces de enfrentar los retos que plantea la sociedad del conocimiento en materia de telecomunicaciones.</p>
+      </div>
+      <div class="numero-pagina">4</div>
+    </section>
+
+  </div>
+
+</body>
+</html>
